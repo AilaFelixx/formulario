@@ -1,0 +1,250 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-titulo: "Lexend", sans-serif;
+    --font-all: "Nunito", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-all);
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(215, 231, 182);
+}
+
+main {
+    background-color: rgba(153, 205, 50, 0.781);
+
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: var(--font-titulo);
+    color: darkgreen;
+    text-align: center;
+    margin: 3rem;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+input {
+    border: 1px solid green;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+}
+
+#dn {
+    display: block;
+}
+
+#nome-sobrenome {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#data-estado {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#data {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 2rem;
+}
+
+.distancia {
+    margin: 1rem 0;
+}
+
+#cel-email {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#mensagem {
+    text-align: center;
+    margin: 2rem;
+}
+
+textarea {
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+#botao {
+    padding: 1rem 2rem;
+    font-family: var(--font-all);
+    font-weight: 800;
+    font-size: 1.8rem;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
+}
+
+#botao:active {
+    box-shadow: none;
+    background-color: seagreen;
+}
+
+
+@media(min-width:426px) {
+    main {
+        background-color: rgba(153, 205, 50, 0.781);
+    
+        width: 100%;
+        margin: auto;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    #nome-sobrenome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nome {
+        margin-right: 2rem;
+    }
+
+    #data-estado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #data {
+        margin-right: 3rem;
+    }
+
+    #cel-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        border-radius: 0.8rem;
+        resize: none;
+        width: 100%;
+    }
+}
+
+@media(min-width:769px) {
+    body {
+        background-color: rgb(215, 231, 182);
+    }
+    
+    main {
+        background-color: rgba(153, 205, 50, 0.781);
+        border-radius: 2rem;
+    
+        width: 70rem;
+        padding: 2rem;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        font-family: var(--font-titulo);
+        color: darkgreen;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    #dn {
+        display: none;
+    }
+    
+    label {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    input {
+        border: 1px solid green;
+        border-radius: 1rem;
+        padding: 0.2rem;
+    }
+    
+    #nome-sobrenome {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 2rem;
+    }
+
+    #sobrenome {
+        padding-top: 1rem;
+    }
+
+    .margem {
+        margin: 0 2rem;
+    }
+    
+    #data-estado {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 2rem;
+        margin-left: -4rem;
+    }
+    
+    #cel-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem;
+    }
+    
+    #mensagem {
+        text-align: center;
+        margin: 2rem;
+    }
+    
+    textarea {
+        margin-top: 1rem;
+        border-radius: 0.8rem;
+        resize: none;
+    }
+}

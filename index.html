@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Faça seu cadastro!</h1>
+    </header>
+    <main>
+        <form action="#" method="get" autocomplete="off">
+            <!--Nome e sobrenome-->
+            <div id="nome-sobrenome" class="margem">
+                <div id="nome" class="distancia">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" size="25">
+                </div>
+
+                <div id="sobrenome" class="margem distancia">
+                    <label for="isobre">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobre" size="25">
+                </div>
+            </div>
+            <!--Data de nascimeto e Estado-->
+            <div id="data-estado">
+                <div id="data" class="distancia">
+                    <label for="idata">Data de nascimento:</label> <br id="dn">
+                    <input type="date" name="Data" id="idata">
+                </div>
+
+                <div id="estado" class="distancia">
+                    <label for="iest">Estado:</label>
+                    <select name="estado" id="iest">
+                        <option selected>---Escolha---</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                </div>
+            </div>
+            <!--Celular e Email-->
+            <div id="cel-email">
+                <div id="celular" class="margem distancia">
+                    <label for="icel">Celular:</label>
+                    <input type="number" name="celular" id="icel">
+                </div>
+                <div id="email" class="margem distancia">
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" size="30">
+                </div>
+            </div>
+            <!--Mensagem-->
+            <div id="mensagem" class="margem distancia">
+                <p><label for="imsg">Conte um pouco pra gente por que você deseja se juntar a nós:<br>(máximo de caracteres: 300)</label></p>
+                <textarea name="msg" id="imsg" cols="70" rows="13"></textarea>
+            </div>
+            <div id="button"><input type="submit" id="botao" value="Cadastre-se"></div>
+        </form>
+    </main>
+</body>
+</html>
